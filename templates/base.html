@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+  <title>Snacks!</title>
+  <link rel="stylesheet" href="{% static 'base.css'%}">
+</head>
+<body>
+  <header>
+    <a href="{% url 'create_view' %}">Add a Snack</a>
+    <a href="{% url 'list_view' %}">List of Snacks</a>
+  </header>
+  <main>
+    {% block content %}
+      <h2>Forgot about the content.</h2>
+    {% endblock content %}
+  </main>
+  <footer>
+    
+  </footer>
+</body>
